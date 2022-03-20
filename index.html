@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проба</title>
+    
+    <style>
+        @font-face {
+            font-family: 'Aucznik 1303 Plus';
+            src: url(15039.otf);
+        }
+
+        h2 {
+            margin-left: 10px;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Aucznik 1303 Plus';
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            font-family: 'Aucznik 1303 Plus';
+            margin: 0px 0px 10px 10px;
+            font-size: 20px;
+        }
+
+        .audio-track {
+            width: 350px;
+            height: 3px;
+            background-color: white;
+            margin: 0px 10px 20px 10px
+        }
+        
+        .time {
+            width: 0;
+            height: 3px;
+            background-color: red
+        }
+
+        div#example h2::first-letter {
+            color: red;
+        }
+
+        div#controls button::first-letter {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="example">
+        <h2 id="mytrack">Звучит: ...</h2>
+    </div>
+    <audio id="audio" src="./audio/1.mp3"></audio>
+    <audio id="audio" src="./audio/2.mp3"></audio>
+    <audio id="audio" src="./audio/3.mp3"></audio>
+    <audio id="audio" src="./audio/4.mp3"></audio>
+    <audio id="audio" src="./audio/5.mp3"></audio>
+    <audio id="audio" src="./audio/6.mp3"></audio>
+    <audio id="audio" src="./audio/7.mp3"></audio>
+    <audio id="audio" src="./audio/8.mp3"></audio>
+    <audio id="audio" src="./audio/9.mp3"></audio>
+    <audio id="audio" src="./audio/10.mp3"></audio>
+    <div id="controls">
+        <div class="audio-track"><div class="time"></div></div>
+        <button class="play">Play</button>
+        <button class="pause">Pause</button>
+        <button class="prev">&#60;prev</button>
+        <button class="next">next&#62;</button>
+    </div>
+    
+    
+<script src="js.js"></script>
+</body>
+</html>
